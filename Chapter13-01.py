@@ -78,20 +78,27 @@ def infixToPostfix(tokenList):
 
 
 def postfixEval(tokenList):
+    opStack = ArrayStack()
     opSet = {'+','-','*','/'}
-    while not tokenList:
-        for s in tokenList:
-            if s in opSet:
-                front = tokenList.pop(tokenList.index(s)-2)
-                back = tokenList.pop(tokenList.index(s)-1)
-                if s == '+':
-                    tokenList.insert(tokenList.index(s), front + back)
-                elif s == '-':
-                    tokenList.insert(tokenList.index(s), front - back)
-                elif s == '*':
-                    tokenList.insert(tokenList.index(s), front * back)
-                else:
-                    tokenList.insert(tokenList.index(s), float(front) / float(back))
+    for s in tokenList:
+        if s not in opSet:
+            opStack.push(s)
+        else:
+            back = opStack.pop()
+            front = opStack.pop()
+            if s is '+':
+                val = front + back
+                opStack.push(val)
+            elif s is '-':
+                val = front - back
+                opStack.push(val)
+            elif s is '*':
+                val = front * back
+                opStack.push(val)
+            else:
+                val = front / back
+                opStack.push(val)
+    return opStack.pop()
 
 
 def solution(expr):
