@@ -36,6 +36,8 @@ class Node:
         elif key > self.key:
             if self.right:
                 self.right.insert(key, data)
+            else:
+                self.right=Node(key,data)    
         else: raise KeyError('KeyError')
 
 
