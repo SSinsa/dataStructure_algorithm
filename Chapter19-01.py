@@ -80,3 +80,14 @@ class BinaryTree:
 
 def solution(x):
     return 0
+
+
+
+# (1) ​DFS(Depth First Search) : 깊이 우선 탐색
+# - 스택을 이용해서 갈 수 있는 만큼 최대한 많이 가고, 갈수 없으면 이전 정점으로 돌아간다.
+# (재귀 호출을 이용해서 구현할 수 있다.)
+
+# (2) BFS(Breadth First Search) : 너비 우선 탐색
+# - 큐를 이용해서 지금 위치에서 갈 수 있는 것을 모두 큐에 넣는 방식으로, 큐에 넣을 때 방문했다고 체크한다.
+
+
