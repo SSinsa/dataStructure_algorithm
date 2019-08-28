@@ -11,6 +11,8 @@
 #포화 이진 트리 (full binary trees)
 #완전 이진 트리 (complete binary trees)
 
+# https://blog.naver.com/printfbns/221333010004
+
 #18강 이진트리
 #자식이 최대 두개!! -> 생각하기 쉬운 트리라서 기본적으로 사용
 
