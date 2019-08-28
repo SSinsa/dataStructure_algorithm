@@ -20,7 +20,9 @@
 # 연산의 정의
 # size() - 현재 트리에 포함되어 있는 노드의 수를 구함
 # depth() - 현재 트리의 깊이 (또는 높이 height) 를 구함
-# 순회 (traversal) ***
+# 순회 (traversal) **
+
+
 
 #     data
 # left    right
