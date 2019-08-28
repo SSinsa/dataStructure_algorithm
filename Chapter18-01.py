@@ -1,15 +1,23 @@
 #17강 트리
-#노드 (nodes)
-#간선 (edges)
-#루트 노드 (root node), 리프 노드 (leaf nodes), 내부 노드 (internal nodes)
-#부모 (parent) 노드와 자식 (child) 노드
-#노드의 수준 (level)
-#노드의 차수 (degree)
-#트리의 높이 (height) - 또는, 깊이 (depth) -
+#노드 (nodes) : 값과 정보를 가지고 있는 하나의 구조체
+#간선 (edges) : 노드를 연결하는 선으로 노드 사이를 연결
+#루트 노드 (root node) : 가장 상위 노드로 부모를 가지지 않는 노드
+#리프 노드 (leaf nodes) : 가장 하위 노드로 자식을 가지지 않는 노드
+#내부 노드 (internal nodes) : 자식 노드가 있는 노드
+#부모 (parent) 노드
+#자식 (child) 노드
+#형제 (Sibiling) 노드 : 	같은 부모 노드의 자식 노드
+#노드의 수준 (level) : 루트 노드부터의 거리
+#노드의 차수 (degree) : 노드의 자식 갯수
+#트리의 높이 (height) - 또는, 깊이 (depth) : 트리에서 부모에서 자식으로 내려갈 때, depth가 1 증가, root는 depth 0
 #부분 트리 (서브트리; subtrees)
-#이진 트리 (binary trees)
-#포화 이진 트리 (full binary trees)
-#완전 이진 트리 (complete binary trees)
+#이진 트리 (binary trees) : 한 노드가 가질 수 있는 자식 노드의 수가 제한되어 있지 않은 일반적인 트리와 달리, 최대 2개까지의 자식 노드만을 가질 수 있다
+#포화 이진 트리 (full binary trees) : 모든 레벨의 노드가 꽉 찬 이진 트리를 의미
+#완전 이진 트리 (complete binary trees) :마지막 레벨 이전까지는 포화 이진 트리이다가 
+#   마지막 레벨에서 노드가 왼쪽부터 차례대로 채워져 있는 트리를 의미
+#이진 트리의 종류는 포화 이진 트리(Full Binary Tree)와 완전 이진 트리(Complete Binary Tree), 편향 이진 트리(Skewed Binary Tree)가 있다. 
+
+
 
 #18강 이진트리
 #자식이 최대 두개!! -> 생각하기 쉬운 트리라서 기본적으로 사용
